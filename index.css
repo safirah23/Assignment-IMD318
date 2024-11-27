@@ -1,0 +1,274 @@
+
+/*Index css*/
+* {
+    box-sizing: border-box;
+  }
+  
+  .body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+    height: 300vh;
+  }
+  
+  @font-face {
+    font-family: myFont;
+    src: url("fonts/Winkle-Regular.ttf");
+  }
+  
+  /* Header/Blog Title */
+  header {
+    width: 98vw;
+    height: 60vh; /* Adjust height as needed */
+    margin: 0 auto;
+    background-image: url("images/header.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 40px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+  }
+  
+  header h1 {
+    color: #f1bbd7;
+    font-family: myFont;
+    font-size: 5.5em;
+  }
+  
+  header h2 {
+    color: #f1bbd7;
+    font-family: myFont;
+    font-size: 4.5em; /* Adjust size as needed */
+    margin-top: -10px; /* Adjust spacing between h1 and h2 */
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #ecbcd8;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2eff1;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+   
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #f0a4d0;
+    color: rgb(253, 249, 249);
+   
+  }
+
+  .row {
+    display: flex;
+    
+  }
+
+  .left-column canvas {
+    margin: 0;
+    padding: 0;
+  }
+
+  .left-column img {
+    
+    
+    margin: 0;
+    padding: 0;
+  }
+
+  
+
+
+ 
+/* Create two columns with different widths */
+.left-column {
+  float: left;
+  width: 32%; /* Smaller width for the left column */
+  height: 50vh;
+  padding: 10px;
+  border-radius: 10px; /* Rounded corners */
+  background-color: #f1bbd7;
+  margin-right: 2%; /* Adds a gap to the right of the left column */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.right-column {
+  float: left;
+  width: 68%; /* Adjusted to maintain full width with the gap */
+  height: 60vh;
+  padding: 10px;
+  border-radius: 10px; /* Rounded corners */
+  background-color: #ffffff;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*CHECKLIST CODE*/
+
+/* Include the padding and border in an element's total width and height */
+* {
+  box-sizing: border-box;
+
+}
+
+/* Remove margins and padding from the list */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  background: #d08bb3e2;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f857b5e2;
+  color: white;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1bbd7;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Style the "Add" button */
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #fddce6;
+}
+
+
+  /* Footer */
+  .footer {
+    width: 97vw; /* Full width */
+    padding: 20px;
+    text-align: center;
+    background: #ecbcd8;
+    color: #4a4a4a;
+    margin-top: 20px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Responsive layout adjustments */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+
+
+  

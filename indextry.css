@@ -1,0 +1,21 @@
+/* Container for the three columns */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* Middle column twice as wide */
+    gap: 20px; /* Gap between columns */
+    padding: 20px;
+    max-width: 1200px; /* Increased max-width for larger columns */
+    margin: 0 auto;
+    background-color: rgb(244, 219, 241);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+
+  /* Styles for individual columns */
+  .column {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    min-height: 300px; /* Added min-height to make columns longer */
+  }

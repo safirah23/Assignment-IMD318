@@ -1,0 +1,150 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  background: #f9f9f9;
+}
+
+@font-face {
+  font-family: myFont;
+  src: url("fonts/Tropi\ Land\ -\ \(Demo\)\ hanscostudio.com.ttf");
+}
+
+/* Header */
+header {
+  width: 100vw;
+  height: 50vh;
+  background-image: url("images/education-header.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+header h1 {
+  color: #f1bbd7;
+  font-family: myFont;
+  font-size: 4em;
+}
+
+header h2 {
+  color: #e3d7ee;
+  font-size: 2em;
+}
+
+.back-home {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #ecbcd8;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1em;
+  border-radius: 5px;
+}
+
+.back-home:hover {
+  background-color: #f0a4d0;
+  color: #000;
+}
+
+/* Main Content */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section {
+  width: 80%;
+  background: #fad3ea;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.section h2 {
+  color: #585858;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.section p {
+  font-size: 1.1em;
+  color: #4a4a4a;
+  line-height: 1.6;
+}
+
+.section ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+.section ul li {
+  margin-bottom: 10px;
+}
+
+.container-skill {
+    width: 100%;
+   
+    background-color: #fff9f9;
+    border-radius: 5px;
+   
+  }
+  
+  .skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+  }
+  
+.canva {width: 90%; background-color: #ff039a;} /* Green */
+.english {width: 89%; background-color: #be3181;} /* Blue */
+.htmlcss {width: 75%; background-color: #dd5b96;} /* Red */
+.php {width: 60%; background-color: #fc9dd9;} /* Dark Grey */
+
+/* Footer */
+.footer {
+  width: 100vw; /* Full width */
+  padding: 20px;
+  text-align: center;
+  background: #fad3ea;
+  color: #4a4a4a;
+  margin-top: 20px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer h2 {
+  color: #4a4a4a;
+}
+
+/* Responsive layout adjustments */
+@media screen and (max-width: 800px) {
+  .section {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header h1 {
+    font-size: 3em;
+  }
+  header h2 {
+    font-size: 1.5em;
+  }
+}
